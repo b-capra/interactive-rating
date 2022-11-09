@@ -25,9 +25,15 @@ body {
   border-radius: 30px;
 }
 
+.card > * {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
 .icon-bg {
   height: 48px;
   width: 48px;
+  margin-top: 32px;
   background-color: var(--dblue);
   border-radius: 24px;
   display: flex;
@@ -39,10 +45,23 @@ body {
   color: var(--white);
   font-size: 28px;
   font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .para {
   color: var(--ltgray);
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.rating-cont {
+  width: 341px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 32px;
 }
 
 .rating {
@@ -52,6 +71,8 @@ body {
   border: none;
   border-radius: 25px;
   color: var(--medgray);
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .submit {
@@ -62,4 +83,5 @@ body {
   border-radius: 23px;
   color: var(--white);
   font-weight: bold;
+  margin-bottom: 32px;
 }
