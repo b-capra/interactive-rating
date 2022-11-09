@@ -5,4 +5,61 @@ html {
   --medgray: hsl(216, 12%, 54%);
   --dblue: hsl(213, 19%, 18%);
   --vdblue: hsl(216, 12%, 8%);
+
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--vdblue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: radial-gradient(#232a34, #181e27);
+  height: 416px;
+  width: 412px;
+  border-radius: 30px;
+}
+
+.icon-bg {
+  height: 48px;
+  width: 48px;
+  background-color: var(--dblue);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.para {
+  color: var(--ltgray);
+}
+
+.rating {
+  height: 51px;
+  width: 51px;
+  background-color: var(--dblue);
+  border: none;
+  border-radius: 25px;
+  color: var(--medgray);
+}
+
+.submit {
+  height: 45px;
+  width: 341px;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 23px;
+  color: var(--white);
+  font-weight: bold;
 }
