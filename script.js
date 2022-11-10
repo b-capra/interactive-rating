@@ -3,14 +3,14 @@ let selected = '';
 
 ratings.forEach((rating) => {
   rating.addEventListener('click', () => {
-    clearRating();
-    selected = rating.textContent;
-    document.getElementById(`${selected}`).classList.add('selected');
+    updateRating(rating.textContent);
   })
 });
 
-function clearRating() {
+function updateRating(newRating) {
   ratings.forEach((rating) => {
     rating.classList.remove('selected')
   })
+  selected = newRating
+  document.getElementById(`${selected}`).classList.add('selected');
 }
