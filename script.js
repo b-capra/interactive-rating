@@ -1,4 +1,5 @@
 const ratingState = document.querySelector('.rating-items');
+const thanksState = document.querySelector('.thank-items');
 const ratings = document.querySelectorAll('.rating');
 let selected = '';
 
@@ -16,10 +17,16 @@ function updateRating(newRating) {
   document.getElementById(`${selected}`).classList.add('selected');
 }
 
-function clearCard() {
+function clearRating() {
   while (ratingState.firstChild) {
     ratingState.removeChild(ratingState.firstChild)
   }
 }
 
-clearCard();
+function clearThanks() {
+  while (thanksState.firstChild) {
+    thanksState.removeChild(thanksState.firstChild)
+  }
+}
+
+clearRating();
