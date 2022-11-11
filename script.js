@@ -1,6 +1,7 @@
 const ratingState = document.querySelector('.rating-items');
 const thanksState = document.querySelector('.thank-items');
 const ratings = document.querySelectorAll('.rating');
+const submit = document.querySelector('.submit');
 let selected = '';
 
 ratings.forEach((rating) => {
@@ -8,6 +9,10 @@ ratings.forEach((rating) => {
     updateRating(rating.textContent);
   })
 });
+
+submit.addEventListener('click', () => {
+  if (selected === '') return;
+})
 
 function updateRating(newRating) {
   ratings.forEach((rating) => {
@@ -29,4 +34,24 @@ function clearThanks() {
   }
 }
 
-clearRating();
+function submitRating() {
+  clearRating();
+  // Create image
+  // Set img class and src
+  // Append img to state
+  // Create selection div
+  // Set div class
+  // Create selection text
+  // Set text class
+  // Append text to div
+  // Append div to state
+  // Create title text
+  // Set title class
+  // Append title to state
+  // Create para text
+  // Set para CLASSES
+  // Append para to state
+}
+
+
+clearThanks();
