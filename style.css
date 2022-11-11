@@ -20,8 +20,6 @@ body {
 
 .card {
   background: radial-gradient(#232a34, #181e27);
-  height: 416px;
-  width: 412px;
   border-radius: 30px;
 }
 
@@ -57,7 +55,6 @@ body {
 }
 
 .rating-cont {
-  width: 341px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +87,6 @@ body {
 
 .submit {
   height: 45px;
-  width: 341px;
   background-color: var(--orange);
   border: none;
   border-radius: 23px;
@@ -132,4 +128,36 @@ body {
 
 .center {
   text-align: center;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 360px;
+  }
+
+  .rating-cont {
+    width: 281px;
+  }
+
+  .submit {
+    width: 279px;
+  }
+}
+
+
+@media only screen and (min-width: 376px) {
+  .card {
+    height: 416px;
+    width: 412px;
+  }
+
+  .rating-cont {
+    width: 341px;
+  }
+
+  .submit {
+    width: 341px;
+  }
 }
