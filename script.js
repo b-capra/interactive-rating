@@ -12,6 +12,8 @@ ratings.forEach((rating) => {
 
 submit.addEventListener('click', () => {
   if (selected === '') return;
+  clearRating();
+  submitRating();
 })
 
 function updateRating(newRating) {
@@ -35,22 +37,25 @@ function clearThanks() {
 }
 
 function submitRating() {
-  clearRating();
-  // Create image
-  // Set img class and src
-  // Append img to state
-  // Create selection div
-  // Set div class
-  // Create selection text
-  // Set text class
-  // Append text to div
-  // Append div to state
-  // Create title text
-  // Set title class
-  // Append title to state
-  // Create para text
-  // Set para CLASSES
-  // Append para to state
+  const tyImage = document.createElement('img')
+  tyImage.setAttribute('src', './img/illustration-thank-you.svg')
+  tyImage.classList.add('ty-image')
+  thanksState.appendChild(tyImage)
+  const selection = document.createElement('div')
+  selection.classList.add('selection')
+  const selText = document.createElement('p')
+  selText.textContent = `You selected ${selected} out of 5`
+  selText.classList.add('sel-text')
+  selection.appendChild(selText)
+  thanksState.appendChild(selection)
+  const title = document.createElement('p')
+  title.textContent = 'Thank you!'
+  title.classList.add('title')
+  thanksState.appendChild(title)
+  const para = document.createElement('p')
+  para.textContent = "We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!"
+  para.classList.add('center', 'para')
+  thanksState.appendChild(para)
 }
 
 
