@@ -30,12 +30,6 @@ function clearRating() {
   }
 }
 
-function clearThanks() {
-  while (thanksState.firstChild) {
-    thanksState.removeChild(thanksState.firstChild)
-  }
-}
-
 function submitRating() {
   const tyImage = document.createElement('img')
   tyImage.setAttribute('src', './img/illustration-thank-you.svg')
@@ -57,6 +51,3 @@ function submitRating() {
   para.classList.add('center', 'para')
   thanksState.appendChild(para)
 }
-
-
-clearThanks();
