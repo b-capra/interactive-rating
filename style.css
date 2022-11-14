@@ -23,18 +23,8 @@ body {
   border-radius: 30px;
 }
 
-.card > * {
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
 .icon-bg {
-  height: 48px;
-  width: 48px;
-  margin-top: 32px;
-  margin-bottom: 32px;
   background-color: var(--dblue);
-  border-radius: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +32,6 @@ body {
 
 .title {
   color: var(--white);
-  font-size: 28px;
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -50,7 +39,7 @@ body {
 
 .para {
   color: var(--ltgray);
-  line-height: 24px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 
@@ -58,20 +47,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
-  margin-bottom: 32px;
 }
 
 .rating {
-  height: 51px;
-  width: 51px;
   background-color: var(--dblue);
   border: none;
-  border-radius: 25px;
   color: var(--medgray);
   font-weight: bold;
-  font-size: 16px;
   transition: background-color, color 0.15s;
+  padding: 0;
 }
 
 .rating:hover {
@@ -94,6 +78,7 @@ body {
   font-weight: bold;
   margin-bottom: 32px;
   transition: background-color, color 0.15s;
+  padding: 0;
 }
 
 .submit:hover {
@@ -143,6 +128,41 @@ body {
 
   .submit {
     width: 279px;
+    padding: 0;
+  }
+
+  .icon-bg {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+
+  .rating-items {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .rating {
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .rating-cont {
+    margin-bottom: 24px;
   }
 }
 
@@ -159,5 +179,37 @@ body {
 
   .submit {
     width: 341px;
+  }
+
+  .icon-bg {
+    height: 48px;
+    width: 48px;
+    margin-top: 32px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .para {
+    line-height: 24px;
+  }
+
+  .rating-items > * {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .rating {
+    height: 51px;
+    width: 51px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+
+  .rating-cont {
+    margin-bottom: 32px;
   }
 }
