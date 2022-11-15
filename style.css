@@ -87,6 +87,7 @@ body {
   margin-bottom: 32px;
   transition: background-color, color 0.15s;
   padding: 0;
+  letter-spacing: 2px;
 }
 
 .submit:hover {
@@ -103,7 +104,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 32px;
+  flex-shrink: 0;
 }
 
 .sel-text {
@@ -113,8 +114,6 @@ body {
 
 #center {
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 
@@ -166,6 +165,21 @@ body {
 
   .ty-image {
     margin-top: 34px;
+    width: 144px;
+    height: 96px;
+  }
+
+  .selection {
+    margin: 24px 0;
+  }
+
+  .sel-text {
+    font-size: 14px;
+  }
+
+  #center {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 
@@ -215,5 +229,14 @@ body {
 
   .ty-image {
     margin-top: 45px;
+  }
+
+  .selection {
+    margin: 32px 0;
+  }
+
+  #center {
+    margin-left: 36px;
+    margin-right: 36px;
   }
 }
