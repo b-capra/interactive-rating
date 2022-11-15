@@ -111,8 +111,10 @@ body {
   margin: auto;
 }
 
-.center {
+#center {
   text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
@@ -161,6 +163,10 @@ body {
     width: 279px;
     padding: 0;
   }
+
+  .ty-image {
+    margin-top: 34px;
+  }
 }
 
 
@@ -205,5 +211,9 @@ body {
 
   .submit {
     width: 341px;
+  }
+
+  .ty-image {
+    margin-top: 45px;
   }
 }
