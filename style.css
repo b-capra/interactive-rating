@@ -122,13 +122,9 @@ body {
     height: 360px;
   }
 
-  .rating-cont {
-    width: 281px;
-  }
-
-  .submit {
-    width: 279px;
-    padding: 0;
+  .rating-items {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   .icon-bg {
@@ -137,11 +133,6 @@ body {
     border-radius: 20px;
     margin-bottom: 16px;
     margin-top: 24px;
-  }
-
-  .rating-items {
-    margin-left: 24px;
-    margin-right: 24px;
   }
 
   .title {
@@ -153,6 +144,11 @@ body {
     line-height: 22px;
   }
 
+  .rating-cont {
+    width: 281px;
+    margin-bottom: 24px;
+  }
+
   .rating {
     height: 42px;
     width: 42px;
@@ -161,8 +157,9 @@ body {
     padding: 0;
   }
 
-  .rating-cont {
-    margin-bottom: 24px;
+  .submit {
+    width: 279px;
+    padding: 0;
   }
 }
 
@@ -173,12 +170,9 @@ body {
     width: 412px;
   }
 
-  .rating-cont {
-    width: 341px;
-  }
-
-  .submit {
-    width: 341px;
+  .rating-items > * {
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .icon-bg {
@@ -197,9 +191,9 @@ body {
     line-height: 24px;
   }
 
-  .rating-items > * {
-    margin-left: 32px;
-    margin-right: 32px;
+  .rating-cont {
+    width: 341px;
+    margin-bottom: 32px;
   }
 
   .rating {
@@ -209,7 +203,7 @@ body {
     font-size: 16px;
   }
 
-  .rating-cont {
-    margin-bottom: 32px;
+  .submit {
+    width: 341px;
   }
 }
